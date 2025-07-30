@@ -216,17 +216,17 @@
   <i class="fab fa-whatsapp"></i>
 </a>
 
-	<!-- Aviso Cookies Minimalista -->
+<!-- Aviso Cookies Minimalista Mejorado -->
 <style>
   #cookie-banner {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.6); /* menos opaco */
     color: white;
     font-family: 'League Spartan', sans-serif;
-    padding: 10px 20px;
+    padding: 12px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -234,18 +234,25 @@
     z-index: 1100;
   }
   #cookie-banner button {
-    background: #25D366;
+    background: none;
     border: none;
-    color: white;
-    padding: 8px 15px;
+    color: #25D366;
     font-weight: 700;
-    border-radius: 4px;
     cursor: pointer;
     font-family: 'League Spartan', sans-serif;
+    text-decoration: underline;
+    padding: 0;
+    font-size: 14px;
+  }
+  #cookie-banner button:hover {
+    color: #1ebe54;
   }
   #cookie-banner a {
     color: #25D366;
     text-decoration: underline;
+  }
+  #cookie-banner a:hover {
+    color: #1ebe54;
   }
 </style>
 
@@ -258,7 +265,6 @@
 </div>
 
 <script>
-  // Mostrar banner solo si no aceptó antes
   if (!localStorage.getItem('cookiesAccepted')) {
     document.getElementById('cookie-banner').style.display = 'flex';
   } else {
