@@ -88,10 +88,10 @@
     </div>
     <nav>
         <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 1rem;">
-            <li><a href="https://instagram.com/nailsinrevolution" target="_blank">Instagram</a></li>
-            <li><a href="https://wa.me/541151765214" target="_blank">WhatsApp</a></li>
-            <li><a href="mailto:nailgoritmo@gmail.com" target="_blank">Email</a></li>
-            <li><a href="https://nailsinrevolution.tiendup.com/" target="_blank">Cursos</a></li>
+            <li><a href="https://www.instagram.com/nailsinrevolution" id="btn-instagram" target="_blank" class="button">Instagram</a></li>
+            <li><a href="https://wa.me/541151765214?text=Hola%20chicos%2C%20vi%20su%20p%C3%A1gina..." id="btn-whatsapp" target="_blank" class="button">WhatsApp</a></li>
+            <li><a href="mailto:info@nailgoritmo.com.ar" id="btn-mail" class="button">Mail</a></li>
+            <li><a href="https://nailsinrevolution.tiendup.com/" id="btn-cursos" target="_blank" class="button">Cursos</a></li>
         </ul>
     </nav>
 </header>
@@ -178,7 +178,40 @@
     };
   });
 </script>
-		
+
+<script>
+  // Instagram
+  document.getElementById('btn-instagram').addEventListener('click', function() {
+    gtag('event', 'click_instagram', {
+      event_category: 'boton',
+      event_label: 'Instagram'
+    });
+  });
+
+  // WhatsApp
+  document.getElementById('btn-whatsapp').addEventListener('click', function() {
+    gtag('event', 'click_whatsapp', {
+      event_category: 'boton',
+      event_label: 'WhatsApp'
+    });
+  });
+
+  // Mail
+  document.getElementById('btn-mail').addEventListener('click', function() {
+    gtag('event', 'click_mail', {
+      event_category: 'boton',
+      event_label: 'Mail'
+    });
+  });
+
+  // Cursos
+  document.getElementById('btn-cursos').addEventListener('click', function() {
+    gtag('event', 'click_cursos', {
+      event_category: 'boton',
+      event_label: 'Cursos'
+    });
+  });
+</script>		
 	</body>
 	
 	
