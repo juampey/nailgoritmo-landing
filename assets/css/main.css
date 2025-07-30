@@ -1696,3 +1696,16 @@ input, select, textarea {
     opacity: 1 !important;
   }
 </style>
+
+#main.always-visible {
+  display: block !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  transition: none !important;
+}
+
+#main.always-visible article {
+  display: block !important;
+  opacity: 1 !important;
+}
