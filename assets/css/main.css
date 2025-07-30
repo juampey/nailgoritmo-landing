@@ -1660,4 +1660,10 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-
+#bg {
+  background-color: #111; /* Fondo por defecto mientras carga la imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease-in-out;
+}
