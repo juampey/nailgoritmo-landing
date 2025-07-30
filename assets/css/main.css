@@ -1718,3 +1718,11 @@ input, select, textarea {
   background: linear-gradient(90deg, #f9ce34, #ee2a7b 70%);
   color: #fff;
 }
+
+.mensaje-chat {
+  animation: fadeInChat 1.3s;
+}
+@keyframes fadeInChat {
+  from { opacity: 0; transform: translateY(15px);}
+  to { opacity: 0.92; transform: translateY(0);}
+}
