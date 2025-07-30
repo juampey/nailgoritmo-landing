@@ -1667,3 +1667,32 @@ input, select, textarea {
   background-repeat: no-repeat;
   transition: background-image 0.5s ease-in-out;
 }
+
+
+<style>
+  /* Fuerza que el contenido principal esté siempre visible */
+  #main {
+    display: block !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    position: relative !important;
+    transition: none !important;
+  }
+
+  /* Opcional: ajusta el fondo para que no tape el contenido */
+  #wrapper {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  /* Elimina efectos del header al hacer scroll */
+  body.is-preload #wrapper {
+    opacity: 1 !important;
+  }
+
+  /* Borra animación inicial si molesta */
+  body.is-preload #header .content {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+</style>
