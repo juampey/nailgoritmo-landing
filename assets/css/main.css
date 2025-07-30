@@ -1714,7 +1714,7 @@ input, select, textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff10; /* el círculo con transparencia */
+  background: #ffffff10;
   border-radius: 100%;
   width: 120px;
   height: 120px;
@@ -1722,7 +1722,7 @@ input, select, textarea {
 }
 
 .logo-img {
-  max-width: 80%;
-  max-height: 80%;
+  width: 70%;
+  height: 70%;
   object-fit: contain;
 }
