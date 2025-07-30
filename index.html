@@ -21,51 +21,6 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-  <!-- Estilo personalizado -->
-  <style>
-    #main.always-visible {
-      display: block !important;
-      opacity: 1 !important;
-      pointer-events: auto !important;
-      position: relative !important;
-      transition: none !important;
-    }
-
-    #main.always-visible article {
-      display: block !important;
-      opacity: 1 !important;
-    }
-
-    #main ul {
-      list-style: disc;
-      padding-left: 1.5rem;
-    }
-
-    #main blockquote {
-      border-left: 4px solid #ccc;
-      padding-left: 1rem;
-      margin-top: 1rem;
-      color: #666;
-    }
-
-    .content .inner .button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      background: #ff4d6d;
-      color: white;
-      font-weight: bold;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-
-    .content .inner .button:hover {
-      background: #ff1a4d;
-    }
-  </style>
-
   <!-- Open Graph -->
   <meta property="og:title" content="Impulsa tus redes y tu empresa con Nailgoritmo">
   <meta property="og:description" content="Publicidad en Meta, creación de contenido y redes listas para vender.">
@@ -82,120 +37,16 @@
 
   <!-- Meta Pixel -->
   <script>
-    !function(f,b,e,v,n,t,s){
-      if(f.fbq)return;n=f.fbq=function(){
-        n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.defer=!0;
-      t.src='https://connect.facebook.net/en_US/fbevents.js';
-      s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)
-    }(window, document,'script');
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.defer=!0;
+    t.src='https://connect.facebook.net/en_US/fbevents.js';
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script');
     fbq('init', '1094130885993152');
     fbq('track', 'PageView');
   </script>
   <noscript>
-    <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1094130885993152&ev=PageView&noscript=1"/>
-  </noscript>
-</head>
-
-<body class="is-preload">
-
-  <div id="wrapper">
-
-    <!-- Header -->
-    <header id="header">
-      <div class="logo">
-        <span class="fa-solid fa-bullhorn logo-icon"></span>
-      </div>
-      <div class="content">
-        <div class="inner">
-          <h1>NAILGORITMO</h1>
-          <p>Potenciá tus redes y vendé más con nosotros</p>
-          <a href="https://wa.me/541151765214" target="_blank" class="button">Hablá por WhatsApp</a>
-        </div>
-      </div>
-      <nav>
-        <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 1rem;">
-          <li><a href="https://instagram.com/nailsinrevolution" target="_blank">Instagram</a></li>
-          <li><a href="https://wa.me/541151765214" target="_blank">WhatsApp</a></li>
-          <li><a href="mailto:nailgoritmo@gmail.com" target="_blank">Email</a></li>
-          <li><a href="https://nailsinrevolution.tiendup.com/" target="_blank">Cursos</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Main -->
-    <div id="main" class="always-visible">
-      <article>
-        <h2 class="major">¿Qué hacemos?</h2>
-        <p>Ayudamos a profesionales y marcas personales a escalar su presencia digital con estrategias de marketing centradas en resultados.</p>
-
-        <h2 class="major">Servicios principales</h2>
-        <ul>
-          <li>Publicidad Meta (Facebook e Instagram)</li>
-          <li>Diseño y optimización de perfil</li>
-          <li>Calendario de contenidos y planificación</li>
-          <li>Asesoramiento y estrategia digital</li>
-        </ul>
-
-        <h2 class="major">Clientes felices</h2>
-        <blockquote>
-          “Gracias a Nailgoritmo llené mis cursos en dos semanas.” – <strong>@cliente</strong>
-        </blockquote>
-      </article>
-    </div>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <p class="copyright">Diseño inspirado en <a href="https://html5up.net">HTML5 UP</a>.</p>
-    </footer>
-  </div>
-
-  <!-- BG -->
-  <div id="bg"></div>
-
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js" defer></script>
-  <script src="assets/js/util.js" defer></script>
-  <script src="assets/js/main.js" defer></script>
-
-  <!-- Eventos personalizados -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const whatsappBtn = document.querySelector('a[href^="https://wa.me"]');
-      if (whatsappBtn) {
-        whatsappBtn.addEventListener('click', () => fbq('track', 'Contact', { method: 'WhatsApp' }));
-      }
-
-      const igBtn = document.querySelector('a[href*="instagram.com"]');
-      if (igBtn) {
-        igBtn.addEventListener('click', () => fbq('trackCustom', 'InstagramClick'));
-      }
-
-      const cursosBtn = document.querySelector('a[href*="tiendup.com"]');
-      if (cursosBtn) {
-        cursosBtn.addEventListener('click', () => fbq('track', 'ViewContent', { content_name: 'Cursos' }));
-      }
-
-      const emailBtn = document.querySelector('a[href^="mailto:"]');
-      if (emailBtn) {
-        emailBtn.addEventListener('click', () => fbq('trackCustom', 'EmailClick'));
-      }
-    });
-  </script>
-
-  <!-- Lazy load para imagen de fondo -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const bg = document.getElementById('bg');
-      const img = new Image();
-      img.src = 'images/bg.jpg';
-      img.onload = function () {
-        bg.style.backgroundImage = 'url("images/bg.jpg")';
-      };
-    });
-  </script>
-</body>
-</html>
+    <img height="1" width="1" style="
