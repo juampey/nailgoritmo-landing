@@ -143,6 +143,18 @@
   });
 </script>
 
+		<!-- Lazy load para imagen de fondo -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const bg = document.getElementById('bg');
+    const img = new Image();
+    img.src = 'images/bg.jpg'; // asegurate que esté en esa ruta
+    img.onload = function () {
+      bg.style.backgroundImage = 'url("images/bg.jpg")';
+    };
+  });
+</script>
+		
 	</body>
 	
 	
