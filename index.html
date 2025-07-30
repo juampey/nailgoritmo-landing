@@ -90,6 +90,45 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // WhatsApp
+    const whatsappBtn = document.querySelector('a[href^="https://wa.me"]');
+    if (whatsappBtn) {
+      whatsappBtn.addEventListener('click', function () {
+        fbq('track', 'Contact', { method: 'WhatsApp' });
+        console.log('Evento Contact (WhatsApp) enviado');
+      });
+    }
+
+    // Instagram
+    const igBtn = document.querySelector('a[href*="instagram.com"]');
+    if (igBtn) {
+      igBtn.addEventListener('click', function () {
+        fbq('trackCustom', 'InstagramClick');
+        console.log('Evento InstagramClick enviado');
+      });
+    }
+
+    // Cursos
+    const cursosBtn = document.querySelector('a[href*="tiendup.com"]');
+    if (cursosBtn) {
+      cursosBtn.addEventListener('click', function () {
+        fbq('track', 'ViewContent', { content_name: 'Cursos' });
+        console.log('Evento ViewContent (Cursos) enviado');
+      });
+    }
+
+    // Email
+    const emailBtn = document.querySelector('a[href^="mailto:"]');
+    if (emailBtn) {
+      emailBtn.addEventListener('click', function () {
+        fbq('trackCustom', 'EmailClick');
+        console.log('Evento EmailClick enviado');
+      });
+    }
+  });
+</script>
 
 	</body>
 	
