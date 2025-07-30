@@ -1661,15 +1661,15 @@ input, select, textarea {
 		}
 
 .logo-icon {
-  display: inline-flex; !important;
+  display: inline-flex; 
   align-items: center;
   justify-content: center;
   background: #fff;
   color: #0064e0; /* Cambia el color si querés */
   border-radius: 50%;
-  font-size: 7.5em; !important; 
-  width: 4.5em; !important;
-  height: 4.5em; !important;
+  font-size: 3.5em;  
+  width: 4.5em; 
+  height: 4.5em; 
   box-shadow: 0 0 0 4px #e0e0e0; /* Opcional, para un borde suave */
 }
 
