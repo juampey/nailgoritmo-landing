@@ -1711,8 +1711,8 @@ input, select, textarea {
 }
 
 .logo-img {
-  width: 50%;
-  height: 50%;
+  width: 48%;
+  height: 48%;
   object-fit: contain;
   border-radius: 50%;
   display: block;
