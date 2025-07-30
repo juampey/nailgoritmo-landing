@@ -1723,8 +1723,8 @@ input, select, textarea {
 }
 
 .logo-img {
-  width: 92%;
-  height: 92%;
+  width: 95%;
+  height: 95%;
   object-fit: contain;
   display: block;
 }
