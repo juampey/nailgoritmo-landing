@@ -1664,8 +1664,8 @@ input, select, textarea {
   display: inline-flex; 
   align-items: center;
   justify-content: center;
-  background: #fff;
-  color: #0064e0; /* Cambia el color si querés */
+  background: none;
+  color: #fff; /* Cambia el color si querés */
   border-radius: 50%;
   font-size: 1.5em;  
   width: 1.5em; 
