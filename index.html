@@ -216,22 +216,26 @@
   <i class="fab fa-whatsapp"></i>
 </a>
 
-<!-- Aviso Cookies Minimalista Mejorado -->
+<!-- Aviso Cookies Minimalista Centrado -->
 <style>
   #cookie-banner {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.6); /* menos opaco */
+    background: rgba(0, 0, 0, 0.6);
     color: white;
     font-family: 'League Spartan', sans-serif;
     padding: 12px 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center; /* centro horizontal */
+    align-items: center; /* centro vertical */
+    gap: 12px; /* espacio entre texto y botón */
     font-size: 14px;
     z-index: 1100;
+  }
+  #cookie-banner div {
+    text-align: center;
   }
   #cookie-banner button {
     background: none;
@@ -242,7 +246,8 @@
     font-family: 'League Spartan', sans-serif;
     text-decoration: underline;
     padding: 0;
-    font-size: 14px;
+    font-size: 13px; /* más chico */
+    line-height: 1;
   }
   #cookie-banner button:hover {
     color: #1ebe54;
@@ -257,10 +262,7 @@
 </style>
 
 <div id="cookie-banner">
-  <div>
-    Usamos cookies para mejorar tu experiencia. 
-    <a href="/politica-de-cookies" target="_blank" rel="noopener noreferrer">Más info</a>
-  </div>
+  <div>Usamos cookies para mejorar tu experiencia. <a href="/politica-de-cookies" target="_blank" rel="noopener noreferrer">Más info</a></div>
   <button id="accept-cookies">Aceptar</button>
 </div>
 
