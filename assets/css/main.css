@@ -1793,3 +1793,7 @@ input, select, textarea {
     font-weight: 400;
   }
 </style>
+
+#header > section.extra-info:before {
+  display: none !important;
+}
