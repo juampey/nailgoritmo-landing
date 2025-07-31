@@ -1749,3 +1749,47 @@ input, select, textarea {
   display: block;
 }
 
+<style>
+  .extra-info {
+    background: rgba(27, 31, 34, 0.75);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 3rem 2rem;
+    color: #fff;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    border-top: 1px solid #444;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+
+  .extra-info .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .extra-info h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+
+  .extra-info .intro {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+
+  .extra-info .listado p {
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+</style>
