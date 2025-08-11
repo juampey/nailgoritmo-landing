@@ -1797,3 +1797,29 @@ input, select, textarea {
 #header > section.extra-info:before {
   display: none !important;
 }
+
+/* Fondo principal */
+#bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: brightness(0.6); /* oscurece un poco el fondo para mejorar contraste */
+  z-index: -2; /* detrás de todo */
+}
+
+/* Capa overlay oscura */
+#bg-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* negro con 40% opacidad */
+  z-index: -1; /* encima del fondo pero detrás del contenido */
+}
+
+/* Contenido principal */
+#wrapper {
+  position: relative;
+  z-index: 1; /* arriba de fondo y overlay */
+}
+
