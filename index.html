@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
   <meta charset="utf-8" />
@@ -130,7 +125,8 @@
 
   <!-- BG -->
   <div id="bg"></div>
-
+<div id="bg-overlay"></div>
+	
   <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/browser.min.js"></script>
@@ -197,9 +193,9 @@
     document.addEventListener('DOMContentLoaded', function () {
       const bg = document.getElementById('bg');
       const img = new Image();
-      img.src = 'images/bg.jpg'; // asegurate que esté en esa ruta
+      img.src = 'images/fondo.jpg'; // asegurate que esté en esa ruta
       img.onload = function () {
-        bg.style.backgroundImage = 'url("images/bg.jpg")';
+        bg.style.backgroundImage = 'url("images/fondo.jpg")';
       };
     });
   </script>
